@@ -27,6 +27,8 @@ class DetailViewController: UIViewController {
     private func updateView(with post: Post?) {
         guard let post = post else { return }
         
+        navigationItem.title = post.title
+        
         postImageView.sd_setImage(with: URL(string: post.image))
         titleLabel.text = post.title
         publishedAtLabel.text = post.publishedAt

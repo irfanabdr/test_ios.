@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE3B9E9C2CEDE73D008A9081 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9E9B2CEDE73D008A9081 /* Alamofire */; };
-		EE3B9E9E2CEDE73D008A9081 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9E9D2CEDE73D008A9081 /* AlamofireDynamic */; };
 		EE3B9EA12CEDE760008A9081 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9EA02CEDE760008A9081 /* SDWebImage */; };
 		EE3B9EA32CEDE760008A9081 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9EA22CEDE760008A9081 /* SDWebImageMapKit */; };
+		EE5DEEAA2CEDECB400915026 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE5DEEA92CEDECB400915026 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5DEEAA2CEDECB400915026 /* Alamofire in Frameworks */,
 				EE3B9EA12CEDE760008A9081 /* SDWebImage in Frameworks */,
-				EE3B9E9C2CEDE73D008A9081 /* Alamofire in Frameworks */,
 				EE3B9EA32CEDE760008A9081 /* SDWebImageMapKit in Frameworks */,
-				EE3B9E9E2CEDE73D008A9081 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +87,9 @@
 			);
 			name = "JustLogin Test";
 			packageProductDependencies = (
-				EE3B9E9B2CEDE73D008A9081 /* Alamofire */,
-				EE3B9E9D2CEDE73D008A9081 /* AlamofireDynamic */,
 				EE3B9EA02CEDE760008A9081 /* SDWebImage */,
 				EE3B9EA22CEDE760008A9081 /* SDWebImageMapKit */,
+				EE5DEEA92CEDECB400915026 /* Alamofire */,
 			);
 			productName = "JustLogin Test";
 			productReference = EE00959B2CED8C6400371D37 /* JustLogin Test.app */;
@@ -123,8 +120,8 @@
 			mainGroup = EE0095922CED8C6400371D37;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				EE5DEEA82CEDECB400915026 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EE00959C2CED8C6400371D37 /* Products */;
@@ -358,14 +355,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.1;
-			};
-		};
 		EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -374,19 +363,17 @@
 				minimumVersion = 5.20.0;
 			};
 		};
+		EE5DEEA82CEDECB400915026 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EE3B9E9B2CEDE73D008A9081 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		EE3B9E9D2CEDE73D008A9081 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
 		EE3B9EA02CEDE760008A9081 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */;
@@ -396,6 +383,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImageMapKit;
+		};
+		EE5DEEA92CEDECB400915026 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE5DEEA82CEDECB400915026 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
