@@ -7,19 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE0096092CED905F00371D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0096072CED905F00371D37 /* ViewController.swift */; };
-		EE00960E2CED909B00371D37 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE00960D2CED909B00371D37 /* Storyboard.storyboard */; };
+		EE3B9E9C2CEDE73D008A9081 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9E9B2CEDE73D008A9081 /* Alamofire */; };
+		EE3B9E9E2CEDE73D008A9081 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9E9D2CEDE73D008A9081 /* AlamofireDynamic */; };
+		EE3B9EA12CEDE760008A9081 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9EA02CEDE760008A9081 /* SDWebImage */; };
+		EE3B9EA32CEDE760008A9081 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EE3B9EA22CEDE760008A9081 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE00959B2CED8C6400371D37 /* JustLogin Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JustLogin Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE0096072CED905F00371D37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE00960D2CED909B00371D37 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EEDF74A12CEDE9E800E4319A /* Exceptions for "JustLogin Test" folder in "JustLogin Test" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EE00959A2CED8C6400371D37 /* JustLogin Test */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EE00959D2CED8C6400371D37 /* JustLogin Test */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EEDF74A12CEDE9E800E4319A /* Exceptions for "JustLogin Test" folder in "JustLogin Test" target */,
+			);
 			path = "JustLogin Test";
 			sourceTree = "<group>";
 		};
@@ -30,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3B9EA12CEDE760008A9081 /* SDWebImage in Frameworks */,
+				EE3B9E9C2CEDE73D008A9081 /* Alamofire in Frameworks */,
+				EE3B9EA32CEDE760008A9081 /* SDWebImageMapKit in Frameworks */,
+				EE3B9E9E2CEDE73D008A9081 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,8 +56,6 @@
 		EE0095922CED8C6400371D37 = {
 			isa = PBXGroup;
 			children = (
-				EE0096072CED905F00371D37 /* ViewController.swift */,
-				EE00960D2CED909B00371D37 /* Storyboard.storyboard */,
 				EE00959D2CED8C6400371D37 /* JustLogin Test */,
 				EE00959C2CED8C6400371D37 /* Products */,
 			);
@@ -74,6 +89,10 @@
 			);
 			name = "JustLogin Test";
 			packageProductDependencies = (
+				EE3B9E9B2CEDE73D008A9081 /* Alamofire */,
+				EE3B9E9D2CEDE73D008A9081 /* AlamofireDynamic */,
+				EE3B9EA02CEDE760008A9081 /* SDWebImage */,
+				EE3B9EA22CEDE760008A9081 /* SDWebImageMapKit */,
 			);
 			productName = "JustLogin Test";
 			productReference = EE00959B2CED8C6400371D37 /* JustLogin Test.app */;
@@ -103,6 +122,10 @@
 			);
 			mainGroup = EE0095922CED8C6400371D37;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EE00959C2CED8C6400371D37 /* Products */;
 			projectDirPath = "";
@@ -118,7 +141,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE00960E2CED909B00371D37 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +151,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0096092CED905F00371D37 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +166,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "JustLogin Test/Resources/Info.plist";
+				INFOPLIST_FILE = "JustLogin Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -174,7 +195,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "JustLogin Test/Resources/Info.plist";
+				INFOPLIST_FILE = "JustLogin Test/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,6 +356,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.20.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE3B9E9B2CEDE73D008A9081 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EE3B9E9D2CEDE73D008A9081 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3B9E9A2CEDE73C008A9081 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		EE3B9EA02CEDE760008A9081 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		EE3B9EA22CEDE760008A9081 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE3B9E9F2CEDE760008A9081 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE0095932CED8C6400371D37 /* Project object */;
 }
